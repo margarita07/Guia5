@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EjercicioActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="22dp"
+        app:srcCompat="@drawable/cinta" />
+
+    <ImageView
+        android:id="@+id/coronaizq"
+        android:layout_width="82dp"
+        android:layout_height="82dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="81dp"
+        android:layout_toStartOf="@+id/coronacentro"
+        app:srcCompat="@drawable/corona" />
+
+    <ImageView
+        android:id="@+id/coronader"
+        android:layout_width="82dp"
+        android:layout_height="82dp"
+        android:layout_alignTop="@+id/coronaizq"
+        android:layout_toEndOf="@+id/coronacentro"
+        app:srcCompat="@drawable/corona" />
+
+    <ImageView
+        android:id="@+id/coronacentro"
+        android:layout_width="82dp"
+        android:layout_height="82dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="88dp"
+        app:srcCompat="@drawable/corona" />
+
+    <Button
+        android:layout_width="70dp"
+        android:layout_height="60dp"
+        android:background="@drawable/fondo_boton"
+        android:id="@+id/btnizq"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="53dp"
+        android:text="IZQ" />
+
+    <Button
+        android:id="@+id/btncentro"
+        android:layout_width="70dp"
+        android:layout_height="60dp"
+        android:background="@drawable/fondo_boton"
+        android:layout_centerInParent="true"
+        android:text="CENTRO" />
+
+    <Button
+        android:id="@+id/btnder"
+        android:layout_width="70dp"
+        android:layout_height="60dp"
+        android:background="@drawable/fondo_boton"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="53dp"
+        android:text="DER" />
+
+</RelativeLayout>
